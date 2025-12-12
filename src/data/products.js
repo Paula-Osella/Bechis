@@ -4,7 +4,7 @@ export const products = [
     name: "Hamburguesa Clásica",
     category: "hamburguesas",
     price: 8.99,
-    image: "/images/burger1.jpg",
+    image: "/hamburguesas/hamburguesa-simple.jpg",
     description: "Hamburguesa con carne, lechuga, tomate y queso",
     ingredients: ["Carne", "Lechuga", "Tomate", "Queso", "Pan", "Salsa"]
   },
@@ -13,7 +13,7 @@ export const products = [
     name: "Hamburguesa Doble",
     category: "hamburguesas",
     price: 12.99,
-    image: "/images/burger2.jpg",
+    image: "/hamburguesas/hamburguesa-doble.jpg",
     description: "Doble carne con queso cheddar",
     ingredients: [
       "Doble Carne",
@@ -26,10 +26,26 @@ export const products = [
   },
   {
     id: 3,
-    name: "Pizza Margarita",
+    name: "Hamburguesa Triple",
+    category: "hamburguesas",
+    price: 12.99,
+    image: "/hamburguesas/hamburguesa-triple.jpg",
+    description: "Triple carne con queso cheddar",
+    ingredients: [
+      "Triple Carne",
+      "Queso Cheddar",
+      "Cebolla",
+      "Pepinillos",
+      "Pan",
+      "Salsa especial"
+    ]
+  },
+  {
+    id: 3,
+    name: "Pizza Clásica",
     category: "pizzas",
     price: 10.99,
-    image: "/images/pizza1.jpg",
+    image: "/pizzas/pizza-clasica.jpg",
     description: "Pizza clásica con tomate y mozzarella",
     ingredients: [
       "Salsa de tomate",
@@ -40,56 +56,130 @@ export const products = [
   },
   {
     id: 4,
-    name: "Pizza Pepperoni",
+    name: "Pizza Calabreza",
     category: "pizzas",
     price: 13.99,
-    image: "/images/pizza2.jpg",
-    description: "Pizza con pepperoni y queso",
+    image: "/pizzas/pizza-calabreza.jpg",
+    description: "Pizza con salame y queso",
     ingredients: ["Salsa de tomate", "Mozzarella", "Pepperoni", "Orégano"]
   },
   {
     id: 5,
-    name: "Hot Dog Clásico",
-    category: "hotdogs",
+    name: "Lomo Clásico",
+    category: "lomitos",
     price: 5.99,
-    image: "/images/hotdog1.jpg",
-    description: "Hot dog con salchica y vegetales",
-    ingredients: ["Salchicha", "Pan", "Mostaza", "Ketchup", "Cebolla"]
+    image: "/lomitos/lomo-clasico.jpg",
+    description: "Lomo, lechuga, tomate, mayo cacera, queso",
+    ingredients: ["Lomo", "Pan", "Mayonesa", "Tomate", "Lechuga", "Queso"]
   },
   {
     id: 6,
-    name: "Papas Fritas",
-    category: "acompañamientos",
+    name: "Lomo Para Dos",
+    category: "lomitos",
     price: 3.99,
-    image: "/images/fries.jpg",
-    description: "Papas fritas crujientes",
-    ingredients: ["Papas", "Sal"]
+    image: "/lomitos/lomo-para-dos.jpg",
+    description: "Lomo, lechuga, tomate, mayo cacera, queso",
+    ingredients: ["Lomo", "Pan", "Mayonesa", "Tomate", "Lechuga", "Queso"]
   },
   {
     id: 7,
+    name: "LomoPizza",
+    category: "lomitos",
+    price: 3.99,
+    image: "/lomitos/lomo-pizza.jpg",
+    description: "Lomo, lechuga, tomate, mayo cacera, queso, salsa",
+    ingredients: ["Lomo", "Pan", "Mayonesa", "Tomate", "Lechuga", "Queso", "Salsa"]
+  },
+  {
+    id: 8,
     name: "Coca Cola",
     category: "bebidas",
     price: 2.99,
-    image: "/images/coke.jpg",
+    image: "/gaseosas/coca-cola.jpg",
     description: "Bebida refrescante 500ml",
     ingredients: []
   },
   {
-    id: 8,
-    name: "Nuggets x10",
-    category: "acompañamientos",
-    price: 6.99,
-    image: "/images/nuggets.jpg",
-    description: "10 nuggets de pollo crujientes",
-    ingredients: ["Pollo", "Empanizado", "Salsa BBQ"]
-  }
+    id: 9,
+    name: "Sprite",
+    category: "bebidas",
+    price: 2.99,
+    image: "/gaseosas/sprite.jpg",
+    description: "Bebida refrescante 500ml",
+    ingredients: []
+  },
+  {
+    id: 10,
+    name: "Pepsi",
+    category: "bebidas",
+    price: 2.99,
+    image: "/gaseosas/pepsi.jpg",
+    description: "Bebida refrescante 500ml",
+    ingredients: []
+  },
+  {
+    id: 11,
+    name: "Sandwich De Bondiola",
+    category: "sandwichs",
+    price: 8.00,
+    image: "/sandwichs/sandwich-bondiola.jpeg",
+    description: "Bondiola desmenuzada",
+    ingredients: []
+  },
+  {
+    id: 12,
+    name: "Hamburguesa Vegana",
+    category: "vegano",
+    price: 8.00,
+    image: "/vegano/hamburguesa-vegana.jpg",
+    description: "Hamburguesa Vegana",
+    ingredients: []
+  },
+  {
+    id: 13,
+    name: "Lomo Vegano",
+    category: "vegano",
+    price: 8.00,
+    image: "/vegano/lomo-vegano.png",
+    description: "Lomo Vegano",
+    ingredients: []
+  },
+  {
+    id: 14,
+    name: "Chocotorta",
+    category: "postre",
+    price: 8.00,
+    image: "/postres/chocotorta.png",
+    description: "Lomo Vegano",
+    ingredients: []
+  },
+  {
+    id: 14,
+    name: "Postre Borracho",
+    category: "postre",
+    price: 8.00,
+    image: "/postres/postre-borracho.jpg",
+    description: "Postre borracho",
+    ingredients: []
+  },
+  {
+    id: 15,
+    name: "Ensalada de Frutas",
+    category: "postre",
+    price: 8.00,
+    image: "/postres/ensalada-de-fruta.jpg",
+    description: "Ensalada de frutas",
+    ingredients: []
+  },
 ];
 
 export const categories = [
   { id: "todos", name: "Todos" },
   { id: "hamburguesas", name: "Hamburguesas" },
+  { id: "lomitos", name: "Lomitos" },
+  { id: "sandwichs", name: "Sandwichs" },
   { id: "pizzas", name: "Pizzas" },
-  { id: "hotdogs", name: "Hot Dogs" },
-  { id: "acompañamientos", name: "Acompañamientos" },
+  { id: "vegano", name: "Vegano" },
+  { id: "postre", name: "Postres" },
   { id: "bebidas", name: "Bebidas" }
 ];
